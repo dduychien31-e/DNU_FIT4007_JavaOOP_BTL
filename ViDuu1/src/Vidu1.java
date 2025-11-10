@@ -18,14 +18,15 @@ public class Vidu1 {
         Scanner sc = new Scanner(System.in);
         int a, b;
 
-        System.out.print("Nhap so nguyen a: ");
+        System.out.print("vượng là con chó : ");
         a = sc.nextInt();
 
-        System.out.print("Nhap so nguyen b: ");
+        System.out.print("chiến là cục cứt: ");
         b = sc.nextInt();
 
         thucHienPhepTinh(a, b);
 
         sc.close();
     }
+
 }

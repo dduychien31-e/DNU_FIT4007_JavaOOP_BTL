@@ -10,7 +10,7 @@ public class Vidu1 {
         if (b != 0) {
             System.out.println("Thuong = " + ((double) a / b));
         } else {
-            System.out.println("Thuong = Khong the chia cho 0!");
+            System.out.println("Thuong = Hello aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!");
         }
     }
 
@@ -30,3 +30,4 @@ public class Vidu1 {
     }
 
 }
+

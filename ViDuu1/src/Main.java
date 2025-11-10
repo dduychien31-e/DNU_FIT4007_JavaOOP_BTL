@@ -13,8 +13,7 @@ public class Main {
 
         System.out.println("Tong = " + (a + b));
         System.out.println("Hieu = " + (a - b));
-        System.out.println("Tich = " + (a * b));
-
+        System.out.println("Tichdgivhhvdiuhfivhdsfsdhvkdshf khánh ăn cứt )
         if (b != 0) {
             System.out.println("Thuong = " + ((double) a / b));
         } else {

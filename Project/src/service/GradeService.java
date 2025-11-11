@@ -6,14 +6,12 @@ import java.util.*;
 public class GradeService {
     private HashMap<Student, ArrayList<Grade>> gradeMap = new HashMap<>();
 
-    // Nhập điểm cho sinh viên theo môn
     public void addGrade(Student student, Course course, double score) {
         gradeMap.putIfAbsent(student, new ArrayList<>());
         gradeMap.get(student).add(new Grade(student, course, score));
         updateAverage(student); // cập nhật ĐTB
     }
 
-    // Cập nhật điểm trung bình sinh viên
     private void updateAverage(Student student) {
         ArrayList<Grade> grades = gradeMap.get(student);
         if (grades == null || grades.isEmpty()) return;
@@ -48,3 +46,4 @@ public class GradeService {
     public void Grades(Student s) {
     }
 }
+

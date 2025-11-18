@@ -1,0 +1,18 @@
+ClassId,ClassName,DepartmentId,AcademicYear,AdvisorId
+EE2022A,Kỹ thuật điện 22A,EE,2022,GV007
+EE2023A,Kỹ thuật điện 23A,EE,2023,GV012
+IT2023A,Công nghệ thông tin 23A,IT,2023,GV011
+EE2021A,Kỹ thuật điện 21A,EE,2021,GV006
+CS2023A,Khoa học máy tính 23A,CS,2023,GV003
+CS2022A,Khoa học máy tính 22A,CS,2022,GV001
+CS2023B,Khoa học máy tính 23B,CS,2023,GV010
+IT2021A,Công nghệ thông tin 21A,IT,2021,GV004
+IT2022B,Công nghệ thông tin 22B,IT,2022,GV005
+IT2022A,Công nghệ thông tin 22A,IT,2022,GV004
+CS2021A,Khoa học máy tính 21A,CS,2021,GV001
+CS2022B,Khoa học máy tính 22B,CS,2022,GV003
+CS2021B,Khoa học máy tính 21B,CS,2021,GV002
+IT2021B,Công nghệ thông tin 21B,IT,2021,GV005
+ME2021A,Cơ khí 21A,ME,2021,GV008
+ME2022A,Cơ khí 22A,ME,2022,GV009
+ME2023A,Cơ khí 23A,ME,2023,GV013

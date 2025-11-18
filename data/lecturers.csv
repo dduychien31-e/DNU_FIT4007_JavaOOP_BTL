@@ -1,0 +1,16 @@
+ID,FullName,Email,Phone,DepartmentId,Title
+GV010,PGS.TS. Duong Van Hung,dvhung@uni.edu.vn,0987654330,CS,Phó giáo sư
+GV011,TS. Ly Thi Kim Anh,ltkima@uni.edu.vn,0987654331,IT,Tiến sĩ
+GV001,TS. Nguyen Van Nam,nvnam@uni.edu.vn,0987654321,CS,Tiến sĩ
+GV012,ThS. Tran Van Hoang,tvhoang@uni.edu.vn,0987654332,EE,Thạc sĩ
+GV002,ThS. Tran Thi Mai,ttmai@uni.edu.vn,0987654322,CS,Thạc sĩ
+GV013,TS. Nguyen Thi Minh,minhnt@uni.edu.vn,0987654333,ME,Tiến sĩ
+GV003,PGS.TS. Le Van Duc,lvduc@uni.edu.vn,0987654323,CS,Phó giáo sư
+GV014,ThS. Vu Van Quang,vvquang@uni.edu.vn,0987654334,CS,Thạc sĩ
+GV004,TS. Pham Van Tuan,pvtuan@uni.edu.vn,0987654324,IT,Tiến sĩ
+GV015,PGS.TS. Ha Thi Thu,hathu@uni.edu.vn,0987654335,IT,Phó giáo sư
+GV005,ThS. Hoang Thi Lan,htlan@uni.edu.vn,0987654325,IT,Thạc sĩ
+GV006,GS.TS. Vo Van Minh,vvminh@uni.edu.vn,0987654326,EE,Giáo sư
+GV007,TS. Dang Thi Hoa,dthoa@uni.edu.vn,0987654327,EE,Tiến sĩ
+GV008,PGS.TS. Bui Van Long,bvlong@uni.edu.vn,0987654328,ME,Phó giáo sư
+GV009,ThS. Ngo Thi Thao,ntthao@uni.edu.vn,0987654329,ME,Thạc sĩ

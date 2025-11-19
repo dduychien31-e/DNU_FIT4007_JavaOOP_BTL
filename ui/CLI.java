@@ -40,16 +40,16 @@ public class CLI {
         System.out.println("\n" + "=".repeat(50));
         System.out.println("                 MENU CHÍNH");
         System.out.println("=".repeat(50));
-        System.out.println("1. 📝 Nhập điểm sinh viên");
-        System.out.println("2. 📊 Xem GPA sinh viên");
-        System.out.println("3. 🏆 Bảng xếp hạng theo lớp");
-        System.out.println("4. 🏅 Bảng xếp hạng theo khoa");
-        System.out.println("5. 📈 Bảng xếp hạng toàn trường");
-        System.out.println("6. 📋 Tạo báo cáo");
-        System.out.println("7. ⚙️  Quản lý dữ liệu");
-        System.out.println("8. 💾 Lưu và thoát");
+        System.out.println("1.  Nhập điểm sinh viên");
+        System.out.println("2.  Xem GPA sinh viên");
+        System.out.println("3.  Bảng xếp hạng theo lớp");
+        System.out.println("4.  Bảng xếp hạng theo khoa");
+        System.out.println("5.  Bảng xếp hạng toàn trường");
+        System.out.println("6.  Tạo báo cáo");
+        System.out.println("7.  Quản lý dữ liệu");
+        System.out.println("8.  Lưu và thoát");
         System.out.println("=".repeat(50));
-        System.out.print("👉 Nhập lựa chọn của bạn: ");
+        System.out.print(" Nhập lựa chọn của bạn: ");
     }
 
     private int getChoice() {
@@ -88,14 +88,14 @@ public class CLI {
                     saveAndExit();
                     break;
                 default:
-                    System.out.println("❌ Lựa chọn không hợp lệ! Vui lòng chọn 1-8.");
+                    System.out.println(" Lựa chọn không hợp lệ! Vui lòng chọn 1-8.");
             }
         } catch (Exception e) {
-            System.out.println("❌ Có lỗi xảy ra: " + e.getMessage());
+            System.out.println(" Có lỗi xảy ra: " + e.getMessage());
         }
 
         if (running && choice >= 1 && choice <= 7) {
-            System.out.print("\n⏸️  Nhấn Enter để tiếp tục...");
+            System.out.print("\n  Nhấn Enter để tiếp tục...");
             scanner.nextLine();
         }
     }
@@ -159,11 +159,11 @@ public class CLI {
             switch (choice) {
                 case 1:
                     dataService.loadAllData();
-                    System.out.println("✅ Đã tải lại dữ liệu thành công!");
+                    System.out.println(" Đã tải lại dữ liệu thành công!");
                     break;
                 case 2:
                     dataService.saveAllData();
-                    System.out.println("✅ Đã lưu dữ liệu thành công!");
+                    System.out.println(" Đã lưu dữ liệu thành công!");
                     break;
                 case 3:
                     displayDataStatistics(dataService);
@@ -171,38 +171,38 @@ public class CLI {
                 case 4:
                     return;
                 default:
-                    System.out.println("❌ Lựa chọn không hợp lệ!");
+                    System.out.println(" Lựa chọn không hợp lệ!");
             }
         } catch (Exception e) {
-            System.out.println("❌ Lỗi: " + e.getMessage());
+            System.out.println(" Lỗi: " + e.getMessage());
         }
     }
 
     private void displayDataStatistics(DataService dataService) {
         System.out.println("\n=== THỐNG KÊ DỮ LIỆU ===");
-        System.out.println("📚 Tổng số sinh viên: " +
+        System.out.println(" Tổng số sinh viên: " +
                 dataService.getStudentRepository().getAllStudents().size());
-        System.out.println("📖 Tổng số học phần: " +
+        System.out.println(" Tổng số học phần: " +
                 dataService.getCourseRepository().getAllCourses().size());
-        System.out.println("👨‍🏫 Tổng số giảng viên: " +
+        System.out.println(" Tổng số giảng viên: " +
                 dataService.getLecturerRepository().getAllLecturers().size());
-        System.out.println("📝 Tổng số bản ghi điểm: " +
+        System.out.println(" Tổng số bản ghi điểm: " +
                 dataService.getGradeRepository().getAllGrades().size());
-        System.out.println("🏫 Tổng số lớp: " +
+        System.out.println(" Tổng số lớp: " +
                 dataService.getClassGroupRepository().getAllClassGroups().size());
     }
 
     private void saveAndExit() {
-        System.out.println("\n💾 Đang lưu dữ liệu...");
+        System.out.println("\n Đang lưu dữ liệu...");
         try {
             menuHandler.getDataService().saveAllData();
-            System.out.println("✅ Đã lưu dữ liệu thành công!");
+            System.out.println(" Đã lưu dữ liệu thành công!");
         } catch (Exception e) {
-            System.out.println("❌ Lỗi khi lưu dữ liệu: " + e.getMessage());
+            System.out.println(" Lỗi khi lưu dữ liệu: " + e.getMessage());
         }
 
-        System.out.println("\n🎓 Cảm ơn bạn đã sử dụng Hệ thống Quản lý Điểm Sinh viên!");
-        System.out.println("👋 Tạm biệt và hẹn gặp lại!");
+        System.out.println("\n Cảm ơn bạn đã sử dụng Hệ thống Quản lý Điểm Sinh viên!");
+        System.out.println(" Tạm biệt và hẹn gặp lại!");
         running = false;
     }
 
@@ -223,8 +223,9 @@ public class CLI {
             File directory = new File(dir);
             if (!directory.exists()) {
                 directory.mkdirs();
-                System.out.println("📁 Đã tạo thư mục: " + dir);
+                System.out.println(" Đã tạo thư mục: " + dir);
             }
         }
     }
+
 }
